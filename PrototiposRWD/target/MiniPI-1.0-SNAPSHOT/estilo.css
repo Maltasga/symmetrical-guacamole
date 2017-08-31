@@ -1,0 +1,112 @@
+a {
+  color: #5f5d5d
+}
+
+a:hover {
+  color: #5f5d5d
+}
+
+ul {
+  list-style: none;
+}
+
+#barra-superior {
+  height: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #ebebeb;
+}
+
+#logo {
+  width: 355px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: relative;
+}
+
+#grupo-menu {
+  margin: 25px auto;
+  height: 40px;
+  border-top: 1px dotted #4c4a4a;
+  border-bottom: 1px dotted #4c4a4a;
+  padding-top: 8px;
+}
+
+#grupo-menu ul {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  text-align: center;
+}
+
+#grupo-menu ul>li {
+  display: inline-block;
+  margin: auto 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  vertical-align: baseline;
+}
+
+#grupo-menu ul>li.promo {
+  color: red;
+  font-weight: 500;
+}
+
+#grupo-menu ul>li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#thumb a {
+  border: none;
+}
+
+#thumb a:hover {
+  border: none;
+}
+
+[class^="header-campo"] {
+  display: inline-block;
+  margin: 15px 10px auto auto;
+}
+
+.header-campo-entrar {
+  font-size: 1.1em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.header-campo-carrinho {
+  font-size: 1.3em;
+}
+
+.header-campo-carrinho:hover {
+  font-size: 1.4em;
+}
+
+.produto-titulo {
+  font-size: 1.12em;
+  font-weight: bold;
+  color: #4b4b4b;
+}
+
+.produto-nome {
+  font-size: 0.85em;
+  margin: 0px auto 25px;
+  color: gray;
+}
+
+.preco-especial {
+  text-decoration: line-through;
+  font-size: 1.35em;
+  color: gray;
+}
+
+.preco-valor {
+  font-weight: bold;
+}

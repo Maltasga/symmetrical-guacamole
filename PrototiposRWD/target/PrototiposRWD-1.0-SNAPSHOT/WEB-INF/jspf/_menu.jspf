@@ -1,0 +1,13 @@
+<div class="row clearfix">
+    <div id="grupo-menu">
+        <ul>
+            <li>menu 1</li>
+            <li>menu 2</li>
+            <li>menu 3</li>
+            <li>menu 4</li>
+            <li class="promo">Promoções</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">&nbsp;</div>
