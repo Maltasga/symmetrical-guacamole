@@ -4,11 +4,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>KK Coolewear</title>
-        <link rel='stylesheet' href='<%= org.webjars.AssetLocator.getWebJarPath("css/bootstrap.min.css")%>'>
-        <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("jquery.min.js")%>'></script>
-        <script type='text/javascript' src='<%= org.webjars.AssetLocator.getWebJarPath("js/bootstrap.min.js")%>'></script>
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/estilo.css">
+        <title>KK Coolwear</title>
+        <%@include file="/WEB-INF/jspf/_references.jspf" %>
     </head>
     <body>
         <%@include file="/WEB-INF/jspf/_header.jspf"  %>
