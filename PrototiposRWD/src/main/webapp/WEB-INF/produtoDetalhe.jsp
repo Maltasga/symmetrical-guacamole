@@ -1,3 +1,5 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="javax.annotation.Resources"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -15,10 +17,11 @@
             <div class="col-md-2">
                 <div id="thumb">
                     <div class="col-md-8">
-                        <a href="#" class="thumbnail" carousel-item="0"><img src="${pageContext.request.contextPath}/img/calca_jeans_forum_destaque.jpg" alt=""></a>
-                        <a href="#" class="thumbnail" carousel-item="1"><img src="${pageContext.request.contextPath}/img/calca_jeans_forum_frente.jpg" alt=""></a>
-                        <a href="#" class="thumbnail" carousel-item="2"><img src="${pageContext.request.contextPath}/img/calca_jeans_forum_costas.jpg" alt=""></a>
-                        <a href="#" class="thumbnail" carousel-item="3"><img src="${pageContext.request.contextPath}/img/calca_jeans_forum_detalhe.jpg" alt=""></a>
+                        <c:forEach items="${model.imagens}" var="i">                        
+                            <a href="#" class="thumbnail" carousel-item="0">
+                                <img src="${pageContext.request.contextPath}/img/${i}" alt="">
+                            </a>
+                        </c:forEach>
                     </div>
                 </div>
             </div>
@@ -46,15 +49,15 @@
             </div>
             <div class="col-md-4">
                 <div class="row produto-titulo">
-                    Forum
-                    <h1 class="produto-nome">Calça Jeans Forum Reta Paul Azul-Marinho</h1>
+                    ${model.titulo}
+                    <h1 class="produto-nome">${model.nome}</h1>
                 </div>
                 <div class="row">
                     <div>
-                        de <span class="preco-especial">R$ 209,00</span>
-                    </div>
-                    <div>
-                        por <span class="preco-valor">R$ 109,90</span>
+                        de <span class="preco-especial"><fmt:formatNumber value="${model.valor}" type="currency"></fmt:formatNumber></span>
+                        </div>
+                        <div>
+                            por <span class="preco-valor"><fmt:formatNumber value="${model.valorPromocional}" type="currency"></fmt:formatNumber></span>
                     </div>
                 </div>
             </div>

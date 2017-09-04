@@ -1,1 +1,3 @@
-com\senac\tads4b\ProdutoDetalhe.class
+com\senac\tads4b\ListaProdutos.class
+com\senac\tads4b\ProdutoDetalheServlet.class
+com\senac\tads4b\ProdutoModel.class

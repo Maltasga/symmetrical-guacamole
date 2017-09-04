@@ -11,20 +11,25 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author While True
  */
-@WebServlet(name = "HomeServlet", urlPatterns = {"/produto-detalhe", "/index.html"})
-public class ProdutoDetalhe extends HttpServlet {
-    
+@WebServlet("/produto-detalhe")
+public class ProdutoDetalheServlet extends HttpServlet {
+
+    ListaProdutos produtos = new ListaProdutos();
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
+        int produtoId = Integer.parseInt(request.getParameter("id"));
+        ProdutoModel model = produtos.getById(produtoId);
+        request.setAttribute("model", model);
+
         request.getRequestDispatcher("/WEB-INF/produtoDetalhe.jsp")
                 .forward(request, response);
     }
-    
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
     }
 }
