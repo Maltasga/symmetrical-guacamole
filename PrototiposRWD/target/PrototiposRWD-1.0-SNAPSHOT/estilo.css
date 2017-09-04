@@ -25,6 +25,22 @@ ul {
   position: relative;
 }
 
+@media only screen and (max-width: 667px) {
+    #logo img {
+        content: url(https://yt3.ggpht.com/-fIbM_Fy576c/AAAAAAAAAAI/AAAAAAAAAAA/buTci9ABA7M/s100-c-k-no-mo-rj-c0xffffff/photo.jpg);
+        height: 60px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #logo img {
+        content: url(https://yt3.ggpht.com/-fIbM_Fy576c/AAAAAAAAAAI/AAAAAAAAAAA/buTci9ABA7M/s100-c-k-no-mo-rj-c0xffffff/photo.jpg);
+        height: 60px;
+        width: 80px;
+    }
+}
+
 #grupo-menu {
   margin: 25px auto;
   height: 40px;
