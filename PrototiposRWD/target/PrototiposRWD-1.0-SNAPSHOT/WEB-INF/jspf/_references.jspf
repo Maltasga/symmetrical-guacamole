@@ -1,8 +1,0 @@
-
-<link href="${pageContext.request.contextPath}/js/libs/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
-<script src="${pageContext.request.contextPath}/js/libs/jquery/jquery.min.js" type="text/javascript"></script>
-
-<script src="${pageContext.request.contextPath}/js/libs/twitter-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="${pageContext.request.contextPath}/estilo.css">

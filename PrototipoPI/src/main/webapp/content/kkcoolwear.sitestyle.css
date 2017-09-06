@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+.glyphicon-large {
+    font-size: 2.5em;
+}
+
+.logo-lg .row {
+    width: 58.33%;
+    padding: 10px;
+    margin:auto;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+.logo-sm .row {
+    padding: 10px;
+    margin:auto;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+.logo-sm {
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .logo-lg {
+        display: none;
+    }
+
+    .logo-sm {
+        display: block;
+    }
+}
