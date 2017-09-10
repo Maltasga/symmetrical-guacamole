@@ -1,4 +1,3 @@
-
 package br.senac.prototipos;
 
 /**
@@ -6,16 +5,23 @@ package br.senac.prototipos;
  * @author while true
  */
 public class ProdutoModel {
-    String nome;
-    String descricao;
-    double valor;
-    ImagemModel imagem;
 
-    public ProdutoModel(String nome, String descricao, double valor, ImagemModel imagem) {
+    private int id;
+    private String nome;
+    private String descricao;
+    private double valor;
+    private ImagemModel imagem;
+
+    public ProdutoModel(int id, String nome, String descricao, double valor, ImagemModel imagem) {
+        this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.valor = valor;
         this.imagem = imagem;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getNome() {
