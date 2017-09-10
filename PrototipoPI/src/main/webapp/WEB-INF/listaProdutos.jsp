@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4 col-lg-6">&nbsp;</div>
+                        <!--<div class="col-md-4 col-lg-6">&nbsp;</div>-->
                         <div class="col-lg-6">
                             <span class="glyphicon glyphicon-shopping-cart glyphicon-large"></span>                    
                             <span class="badge">0</span>
