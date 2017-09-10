@@ -63,6 +63,62 @@ body{
     position: absolute;
 }
 
+.font-text{
+    font-size: 1.1em;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.margin-left{
+    margin-left: 2%;
+}
+
+.txtPesquisa{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border-bottom: solid;
+    display: block;
+    width: 50%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;   
+}
+.icon-search{
+    position: relative;
+    left: 0.2em;
+    top: 0.7em;
+}
+
+.borda-inferior{
+    border-bottom: solid;
+}
+
+.pesquisa{
+    padding: 3%;
+}
+
+.icons{
+    font-size: 3vw;
+}
+
+.img-logo{
+    background: url(../content/imagens/logo-lg.png) no-repeat;
+    width: 31em;
+    height: 7.1em;
+}
+
 @media screen and (max-width: 700px){
     .header-lg {
         display: none;
@@ -75,5 +131,28 @@ body{
     .produto>center{
         padding: 20px;
         min-height: 200px;
+    }
+}
+
+@media screen and (max-width: 993px){
+    .img-logo{
+        background: url(../content/imagens/logo-sm.png) no-repeat;
+    }
+
+    .pesquisa{
+        position: relative;
+        bottom: 5.5em;
+        left: 5em;
+    }
+
+    .contaner-icons{
+        position: relative;
+        bottom: 10em;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .txtPesquisa{
+        width: 29%;
     }
 }

@@ -15,58 +15,51 @@
         <script src="${url}/content/libs/jquery/jquery.min.js" type="text/javascript"></script>
         <script src="${url}/content/libs/twitter-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     </head>
-    <body>      
-        <div class="container">  
-            <div class="row">
-                <!-- CABEÇALHO PEQUENO -->
-                <div class="header-sm col-xs-2">
-                    <img class="img-responsive" src="${url}/content/imagens/logo-sm.png" alt="Logotipo kk coolwear" />
-                </div>
-                <div class="header-sm col-xs-5">
-                    <input type="text" class="form-control" />
-                </div>
-                <div class="header-sm col-xs-5 clearfix">
-                    <div class="header-sm icone"><span class="glyphicon glyphicon-list-alt glyphicon-large"></span></div>
-                    <div class="header-sm icone"><span class="glyphicon glyphicon-shopping-cart glyphicon-large"></span></div>
-                    <div class="header-sm icone"><span class="glyphicon glyphicon-user glyphicon-large"></span></div>
-                </div>
-                <!-- FIM CABEÇALHO PEQUENO -->
+    <body>   
 
-                <!-- CABEÇALHO MEDIO/GRANDE -->
-                <div class="header-lg col-lg-3"></div>
-                <div class="header-lg col-md-6 col-lg-6">                
-                    <div class="row">
-                        <img class="img-responsive" src="${url}/content/imagens/logo-lg.png" alt=""/>
-                    </div>
-                    <div class="row">
-                        <input type="text" class="form-control" />
-                    </div>
-                </div>
-                <div class="header-lg col-lg-3">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <span class="glyphicon glyphicon-list-alt glyphicon-large"></span>
-                            <br />
-                            <span>Pedidos</span>
+        <div class="row">
+            <div class="col-lg-9 col-md-6">                
+<!--                <div class="row">-->
+                    <div class="flex-start margin-left">
+                        <div></div>
+                        <span class="img-logo"></span>
+<!--                        <img class="img-responsive" src="${url}/content/imagens/logo-lg.png" alt=""/>-->
+                    </div>                   
+<!--                </div>-->
+<!--                <div class="row">-->
+                    <div class="flex-start margin-left pesquisa">
+                        <div class="borda-inferior">
+                            <i class="glyphicon glyphicon-search icon-search"></i>  
                         </div>
-                        <div class="col-md-4 col-lg-6">
-                            <span class="glyphicon glyphicon-user glyphicon-large"></span>
-                            <br />
-                            <span>Minha conta</span>
-                        </div>
+                        <input type="text" class="txtPesquisa" placeholder="O que você procura?" />   
                     </div>
-                    <div class="row">
-                        <!--<div class="col-md-4 col-lg-6">&nbsp;</div>-->
-                        <div class="col-lg-6">
-                            <span class="glyphicon glyphicon-shopping-cart glyphicon-large"></span>                    
-                            <span class="badge">0</span>
-                        </div>
-                    </div>
-                </div>                
-                <!-- FIM CABEÇALHO MEDIO/GRANDE -->
-
+<!--                </div>-->
             </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="row">
+                    <div class="flex-end contaner-icons">
+                        <div class="col-lg-4 col-md-2">
+                            <span class="glyphicon glyphicon-list-alt flex-center icons"></span>
+                            <div class="flex-center">   
+                                <span class="font-text">Pedidos</span> 
+                            </div>
 
+                        </div>
+                        <div class="col-lg-4 col-md-2">
+                            <span class="glyphicon glyphicon-user flex-center icons"></span>
+                            <div class="flex-center">
+                                <span class="font-text">Minha conta</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-2">
+                            <span class="glyphicon glyphicon-shopping-cart icons"></span>                    
+                            <span class="badge">0</span>
+                        </div>  
+                    </div>
+                </div>
+            </div>                
+        </div>
+        <div class="container"> 
             <c:forEach items="${produtos}" var="item">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="produto">
