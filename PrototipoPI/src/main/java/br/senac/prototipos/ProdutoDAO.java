@@ -1,6 +1,8 @@
 package br.senac.prototipos;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
@@ -9,6 +11,8 @@ import java.util.ArrayList;
 public class ProdutoDAO {
 
     private ArrayList<ProdutoModel> produtos;
+    private Map<String, String> tamanhos;
+    private Map<String, String> cores;
 
     public ProdutoDAO() {
         produtos = new ArrayList();
@@ -22,6 +26,21 @@ public class ProdutoDAO {
         produtos.add(new ProdutoModel(8, "Aleatory", "Camiseta Aleatory Bordado Azul", 59.99, new ImagemModel(7, "p8-camiseta-aleatory.jpg", "Camiseta Aleatory Bordado Azul")));
         produtos.add(new ProdutoModel(9, "Quiksilver", "Camiseta Quiksilver Slim Fit Plit Photo Azul", 54.99, new ImagemModel(8, "p9-camiseta-quiksilver.jpg", "Camiseta Quiksilver Slim Fit Plit Photo Azul")));
         produtos.add(new ProdutoModel(10, "Hang Loose", "Camiseta Hang Loose Flower Cinza", 59.99, new ImagemModel(9, "p10-camiseta-hangloose.jpg", "Camiseta Hang Loose Flower Cinza")));
+
+        this.tamanhos = new HashMap<>();
+        this.tamanhos.put("1", "PP");
+        this.tamanhos.put("2", "P");
+        this.tamanhos.put("3", "M");
+        this.tamanhos.put("4", "G");
+        this.tamanhos.put("5", "2G");
+        this.tamanhos.put("6", "3G");
+
+        this.cores = new HashMap<>();
+        this.cores.put("1", "Cinza");
+        this.cores.put("2", "Branco");
+        this.cores.put("3", "Azul Marinho");
+        this.cores.put("4", "Vermelho");
+
     }
 
     public ArrayList<ProdutoModel> getProdutos() {
@@ -38,4 +57,13 @@ public class ProdutoDAO {
         }
         return p;
     }
+
+    public Map<String, String> getTamanhos() {
+        return tamanhos;
+    }
+
+    public Map<String, String> getCores() {
+        return cores;
+    }
+
 }
