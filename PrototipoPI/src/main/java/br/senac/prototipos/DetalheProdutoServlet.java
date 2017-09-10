@@ -25,6 +25,8 @@ public class DetalheProdutoServlet extends HttpServlet {
         int produtoId = Integer.parseInt(param);
         
         request.setAttribute("model", dao.getById(produtoId));
+        request.setAttribute("tamanhos", dao.getTamanhos());
+        request.setAttribute("cores", dao.getCores());
         
         request.getRequestDispatcher("/WEB-INF/detalheProduto.jsp")
                 .forward(request, response);
