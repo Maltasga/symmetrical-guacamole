@@ -61,7 +61,9 @@
                         </select>
                     </div>
                     <div class="row linha-btn">
-                        <input  type="button" class="btn btn-primary" value="Comprar" />
+                        <a href="checkout">
+                            <input  type="button" class="btn btn-primary" value="Comprar" />
+                        </a>
                     </div>
                     <div class="row">
                         <div id="parcelamento">
