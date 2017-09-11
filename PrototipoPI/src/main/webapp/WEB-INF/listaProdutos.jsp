@@ -72,7 +72,7 @@
                         <p class="valor"><fmt:formatNumber value="${item.valor}" currencySymbol="R$ " type="currency"></fmt:formatNumber></p>
                         <div class="btn-comprar"><a href="detalhe?id=${item.id}">
                                 <button type="button" class="btn btn-info">
-                                    Comprar
+                                    Detalhes
                                 </button></a>
                         </div>
                     </div>
