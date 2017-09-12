@@ -156,3 +156,20 @@ body{
         width: 29%;
     }
 }
+
+@media screen and (max-width: 500px){
+    .txtPesquisa{
+        width: 90% !important;
+    }
+    .pesquisa{
+        bottom: 1.5em;
+        left: 0em;
+    }
+
+    .contaner-icons{
+        bottom: 8em;
+    }
+    .icons{
+        font-size: 5vw;
+    }
+}
