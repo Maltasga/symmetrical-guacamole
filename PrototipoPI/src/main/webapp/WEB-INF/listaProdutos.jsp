@@ -17,17 +17,19 @@
     </head>
     <body>   
         <div class="row">
-            <div class="col-lg-9 col-md-6">                
+            <div class="col-lg-4 col-md-6">                
                 <div class="flex-start margin-left">
                     <div></div>
                     <span class="img-logo"></span>
                 </div>                   
-                <div class="flex-start margin-left pesquisa">
+            </div>
+            <div class="col-lg-5">
+                <div class="margin-left pesquisa">
                     <div class="borda-inferior">
                         <i class="glyphicon glyphicon-search icon-search"></i>  
                     </div>
                     <input type="text" class="txtPesquisa" placeholder="O que você procura?" />   
-                </div>
+                </div>     
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="row">
@@ -62,16 +64,18 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <!--                        <a class="navbar-brand" href="#">Project name</a>-->
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Feminino</a></li>
-                            <li><a href="#">Masculino</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                        <div class="flex-center">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Feminino</a></li>
+                                <li><a href="#">Masculino</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </nav>
