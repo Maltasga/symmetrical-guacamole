@@ -16,24 +16,18 @@
         <script src="${url}/content/libs/twitter-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     </head>
     <body>   
-
         <div class="row">
             <div class="col-lg-9 col-md-6">                
-<!--                <div class="row">-->
-                    <div class="flex-start margin-left">
-                        <div></div>
-                        <span class="img-logo"></span>
-<!--                        <img class="img-responsive" src="${url}/content/imagens/logo-lg.png" alt=""/>-->
-                    </div>                   
-<!--                </div>-->
-<!--                <div class="row">-->
-                    <div class="flex-start margin-left pesquisa">
-                        <div class="borda-inferior">
-                            <i class="glyphicon glyphicon-search icon-search"></i>  
-                        </div>
-                        <input type="text" class="txtPesquisa" placeholder="O que você procura?" />   
+                <div class="flex-start margin-left">
+                    <div></div>
+                    <span class="img-logo"></span>
+                </div>                   
+                <div class="flex-start margin-left pesquisa">
+                    <div class="borda-inferior">
+                        <i class="glyphicon glyphicon-search icon-search"></i>  
                     </div>
-<!--                </div>-->
+                    <input type="text" class="txtPesquisa" placeholder="O que você procura?" />   
+                </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="row">
@@ -43,7 +37,6 @@
                             <div class="flex-center">   
                                 <span class="font-text">Pedidos</span> 
                             </div>
-
                         </div>
                         <div class="col-lg-4 col-md-2">
                             <span class="glyphicon glyphicon-user flex-center icons"></span>
@@ -59,7 +52,31 @@
                 </div>
             </div>                
         </div>
-        <div class="container"> 
+        <div class="menu">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--                        <a class="navbar-brand" href="#">Project name</a>-->
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Feminino</a></li>
+                            <li><a href="#">Masculino</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
             <c:forEach items="${produtos}" var="item">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="produto">
