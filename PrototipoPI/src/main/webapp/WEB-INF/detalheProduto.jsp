@@ -16,6 +16,9 @@
         <script src="${url}/content/libs/twitter-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     </head>
     <body>
+        <!-- MENU -->
+        <%@include file="../WEB-INF/cabecalho.jsp" %>
+        <!-- MENU -->
         <div class="container">
             <div class="col-xs-12 col-md-6 col-lg-6">
                 <div class="miniaturas col-sm-2 col-md-2 col-lg-2">
