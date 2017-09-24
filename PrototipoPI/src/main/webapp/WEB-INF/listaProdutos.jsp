@@ -30,10 +30,12 @@
                         <p class="nome">${item.nome}</p>
                         <p class="descricao">${item.descricao}</p>
                         <p class="valor"><fmt:formatNumber value="${item.valor}" currencySymbol="R$ " type="currency"></fmt:formatNumber></p>
-                        <div class="btn-comprar"><a href="detalhe?id=${item.id}">
+                        <div class="btn-comprar">
+                            <a href="detalhe?id=${item.id}">
                                 <button type="button" class="btn btn-info">
                                     Detalhes
-                                </button></a>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>

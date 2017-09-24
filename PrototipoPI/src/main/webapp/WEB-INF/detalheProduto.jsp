@@ -44,47 +44,48 @@
                     </div>
                 </div>
                 <div class="col-xs-5 col-md-6 col-lg-6">
+                    <form method="POST" action="checkout">
+                        <input type="hidden" value="${model.id}" name="id"/>
                     <div class="container-opcoes">
                         <div class="row">
                             <p>Cores disponíveis</p>
-                            <select class="form-control">
+                            <select class="form-control" name="cor">
                                 <option value=""></option>
-                            <c:forEach items="${cores}" var="item">
-                                <option value="${item.key}">${item.value}</option>
-                            </c:forEach>
-                        </select>
-                    </div>
-                    <div class="row">
-                        <p>Tamanho</p>
-                        <select class="form-control">
-                            <option value=""></option>
-                            <c:forEach items="${tamanhos}" var="item">
-                                <option value="${item.key}">${item.value}</option>
-                            </c:forEach>
-                        </select>
-                    </div>
-                    <div class="row linha-btn">
-                        <a href="checkout">
-                            <input  type="button" class="btn btn-primary" value="Comprar" />
-                        </a>
-                    </div>
-                    <div class="row">
-                        <div id="parcelamento">
-                            <p>Parcelamento</p>
-                            <img src="${url}/content/imagens/bandeiras-parcelamento.gif" alt="Bandeiras de cartões de crédito aceitas" />  
-                            <table class="table table-striped table-responsive">
-                                <c:forEach begin="1" end="5" var="i">
-                                    <tr>
-                                        <td>
-                                            <c:out  value="${i}"></c:out> x <fmt:formatNumber value="${model.valor / i}" type="currency" currencySymbol="R$ " ></fmt:formatNumber> sem juros
-                                            </td>
-                                        </tr>
+                                <c:forEach items="${cores}" var="item">
+                                    <option value="${item.key}">${item.value}</option>
                                 </c:forEach>
-                            </table>   
+                            </select>
                         </div>
+                        <div class="row">
+                            <p>Tamanho</p>
+                            <select class="form-control" name="tamanho">
+                                <option value=""></option>
+                                <c:forEach items="${tamanhos}" var="item">
+                                    <option value="${item.key}">${item.value}</option>
+                                </c:forEach>
+                            </select>
+                        </div>
+                        <div class="row linha-btn">
+                            <input type="submit" class="btn btn-primary" value="Comprar" />
+                        </div>
+                </form>
+                <div class="row">
+                    <div id="parcelamento">
+                        <p>Parcelamento</p>
+                        <img src="${url}/content/imagens/bandeiras-parcelamento.gif" alt="Bandeiras de cartões de crédito aceitas" />  
+                        <table class="table table-striped table-responsive">
+                            <c:forEach begin="1" end="5" var="i">
+                                <tr>
+                                    <td>
+                                        <c:out  value="${i}"></c:out> x <fmt:formatNumber value="${model.valor / i}" type="currency" currencySymbol="R$ " ></fmt:formatNumber> sem juros
+                                        </td>
+                                    </tr>
+                            </c:forEach>
+                        </table>   
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
